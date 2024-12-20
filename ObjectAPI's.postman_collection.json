@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "1049eebe-4cd1-4064-90ba-4e3035c7e58c",
+		"name": "ObjectAPI's",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34402241"
+	},
+	"item": [
+		{
+			"name": "Add Object",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Apple MacBook Pro 16\",\r\n    \"data\": {\r\n        \"year\": 2019,\r\n        \"price\": 1849.99,\r\n        \"CPU model\": \"Intel Core i9\",\r\n        \"Hard disk size\": \"1 TB\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.restful-api.dev/objects",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Object",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/ff808181932badb60193ddaddfb77eaa",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"ff808181932badb60193ddaddfb77eaa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Apple MacBook Pro 16\",\r\n    \"data\": {\r\n        \"year\": 2019,\r\n        \"price\": 2049.99,\r\n        \"CPU model\": \"Intel Core i9\",\r\n        \"Hard disk size\": \"1 TB\",\r\n        \"color\": \"silver\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/ff808181932badb60193ddaddfb77eaa",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"ff808181932badb60193ddaddfb77eaa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Object",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.restful-api.dev/objects/ff808181932badb60193dee46a5b0332",
+					"protocol": "https",
+					"host": [
+						"api",
+						"restful-api",
+						"dev"
+					],
+					"path": [
+						"objects",
+						"ff808181932badb60193dee46a5b0332"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CoinDesk",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.coindesk.com/v1/bpi/currentprice.json",
+					"protocol": "https",
+					"host": [
+						"api",
+						"coindesk",
+						"com"
+					],
+					"path": [
+						"v1",
+						"bpi",
+						"currentprice.json"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

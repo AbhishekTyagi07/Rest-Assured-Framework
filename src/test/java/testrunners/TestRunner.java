@@ -4,11 +4,12 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "src/test/resources/features",
+        features = "src/test/resources/features/ObjectAPI.feature",
         glue = "stepdefinitions",
         plugin = {"pretty", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},
         monochrome = true
 )
 
 public class TestRunner extends AbstractTestNGCucumberTests {
+//    tags = "@WithoutAddObject",
 }
